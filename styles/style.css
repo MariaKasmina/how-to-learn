@@ -9,7 +9,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-div {
+div, h3 {
   border: 1px solid red;
 }
 
@@ -29,6 +29,7 @@ img {
   position: absolute;
   top: 30px;
   left: 64px;
+  z-index: 1;
 }
 
 .logo_place_footer {
@@ -41,7 +42,6 @@ img {
 
 .flex-column {
   border: 2px solid yellow;
-  width: 730px;
   display: flex;
   flex-direction: column;
   margin-left: 64px;
@@ -49,9 +49,29 @@ img {
 }
 
 .header__title{
+  width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+  z-index: 1;
+  margin: 0;
+}
+
+.header__subtitle {
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 1;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  margin: 0;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 .header {
@@ -61,6 +81,14 @@ img {
   position: relative;
   display: flex;
   /* выше установили ограничения для секции */
+}
+
+.header__main-illustration{
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
