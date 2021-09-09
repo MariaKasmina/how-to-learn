@@ -17,6 +17,7 @@ img {
   border: 1px solid blue;
 }
 
+
 .logo {
   height: 32px;
   width: 183px;
@@ -34,12 +35,31 @@ img {
   background-image: url("../images/logo_place_footer.svg");
   background-repeat: no-repeat;
 }
+.logo__container{
+  height: 64px;
+}
+
+.flex-column {
+  border: 2px solid yellow;
+  width: 730px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 64px;
+  justify-content: center;
+}
+
+.header__title{
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+}
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   position: relative;
+  display: flex;
   /* выше установили ограничения для секции */
 }
 
