@@ -9,12 +9,16 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-div, h3 {
+div, h3, h1 {
   border: 1px solid red;
 }
 
 img, header {
   border: 1px solid blue;
+}
+
+section {
+  border: 1px solid purple;
 }
 
 
@@ -36,7 +40,8 @@ img, header {
   background-image: url("../images/logo_place_footer.svg");
   background-repeat: no-repeat;
 }
-.logo__container{
+
+.logo__container {
   height: 64px;
 }
 
@@ -48,7 +53,7 @@ img, header {
   justify-content: center;
 }
 
-.header__title{
+.header__title {
   width: 730px;
   line-height: 96px;
   font-size: 102px;
@@ -83,7 +88,7 @@ img, header {
   /* выше установили ограничения для секции */
 }
 
-.header__main-illustration{
+.header__main-illustration {
   width: 765px;
   height: 608px;
   position: absolute;
@@ -117,13 +122,13 @@ img, header {
   min-height: 396px;
 }
 
-.two-columns{
+.two-columns {
   width: 80%;
   display: flex;
   justify-content: space-between;
 }
 
-.two-columns__brief{
+.two-columns__brief {
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -139,20 +144,64 @@ img, header {
   font-weight: normal;
 }
 
-div p.two-columns__paragraph:nth-child(1){
+div p.two-columns__paragraph:nth-child(1) {
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-div p.two-columns__paragraph:nth-child(2){
+div p.two-columns__paragraph:nth-child(2) {
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-div p.two-columns__paragraph:nth-child(3){
+div p.two-columns__paragraph:nth-child(3) {
   margin: 0;
 }
 
 .two-columns__span-accent {
   font-weight: bold;
 }
+
+.feynman__title {
+  margin: 0;
+  width: 648px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.feynman__subtitle {
+  margin-top: 70px;
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman {
+  height: 890px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/feynman.png");
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  background-position: bottom left;
+  position: relative;
+}
+
+.feynman__link{
+  position: absolute;
+  right: 0;
+  margin-right: 48px;
+  top: 50%;
+  text-decoration: none;
+  color: #2f80ed;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+
