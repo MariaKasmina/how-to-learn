@@ -13,7 +13,7 @@ div, h3 {
   border: 1px solid red;
 }
 
-img {
+img, header {
   border: 1px solid blue;
 }
 
@@ -107,4 +107,52 @@ img {
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.description {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  min-height: 396px;
+}
+
+.two-columns{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__brief{
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+div p.two-columns__paragraph:nth-child(1){
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+div p.two-columns__paragraph:nth-child(2){
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+div p.two-columns__paragraph:nth-child(3){
+  margin: 0;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
 }
