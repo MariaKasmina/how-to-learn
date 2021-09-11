@@ -164,7 +164,7 @@ div p.two-columns__paragraph:nth-child(3) {
 }
 
 .feynman__title {
-  margin: 0;
+  margin-top: 100px;
   width: 648px;
   text-align: center;
   line-height: 1.15;
@@ -274,4 +274,71 @@ div p.two-columns__paragraph:nth-child(3) {
   margin-right: 10px;
 }
 
+/*таблица*/
+.digits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  border: 1px solid royalblue;
+  width: 1100px;
+  margin-bottom: 100px;
+}
+
+.table__cell {
+  border: 2px solid darkkhaki;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  border: 1px solid turquoise;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-title {
+  width: 60%;
+  text-align: center;
+}
+
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+}
+
+.table__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.table__text {
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.section-title {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
 
