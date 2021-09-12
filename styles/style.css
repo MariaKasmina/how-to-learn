@@ -278,11 +278,6 @@ div p.two-columns__paragraph:nth-child(3) {
   z-index: 1;
 }
 
-.section-title_theme_dark {
-  color: white;
-  z-index: 1;
-}
-
 .kaufman__triangle {
   width: 877px;
   height: 877px;
