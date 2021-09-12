@@ -9,22 +9,20 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-div, h3, h1 {
-  border: 1px solid red;
+/*header*/
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  position: relative;
+  display: flex;
+  background-color: #f2f2f2;
 }
 
-img, header {
-  border: 1px solid blue;
+.logo__container {
+  height: 64px;
 }
-
-section {
-  border: 1px solid purple;
-}
-
-a {
-  border: 1px solid aqua;
-}
-
 
 .logo {
   height: 32px;
@@ -40,13 +38,7 @@ a {
   z-index: 1;
 }
 
-
-.logo__container {
-  height: 64px;
-}
-
 .flex-column {
-  border: 2px solid yellow;
   display: flex;
   flex-direction: column;
   margin-left: 64px;
@@ -79,14 +71,13 @@ a {
   text-decoration: none;
 }
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  position: relative;
-  display: flex;
-  background-color: #f2f2f2;
-  /* выше установили ограничения для секции */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
 }
 
 .header__main-illustration {
@@ -97,23 +88,7 @@ a {
   right: 0;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  background-color: #2f80ed;
-  position: absolute;
-  top: 64px;
-  right: 0;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
+/*description*/
 
 .description {
   margin-top: 100px;
@@ -163,22 +138,66 @@ div p.two-columns__paragraph:nth-child(3) {
   font-weight: bold;
 }
 
-.feynman__title {
-  margin-top: 100px;
-  width: 648px;
+/*digits*/
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  width: 60%;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
   line-height: 1.15;
-  font-size: 120px;
+  font-size: 60px;
   font-weight: bold;
 }
 
-.feynman__subtitle {
-  margin-top: 70px;
+.section-subtitle {
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 60%;
   text-align: center;
-  line-height: 51px;
-  font-size: 36px;
+}
+
+.table {
+  width: 1100px;
+}
+
+.table__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.table__cell {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 18px;
   font-weight: normal;
 }
+
+/*feynman*/
 
 .feynman {
   height: 890px;
@@ -194,6 +213,24 @@ div p.two-columns__paragraph:nth-child(3) {
   background-color: #f2f2f2;
 }
 
+.feynman__title {
+  margin-top: 100px;
+  width: 648px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.feynman__subtitle {
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
 .feynman__link {
   position: absolute;
   right: 0;
@@ -206,6 +243,57 @@ div p.two-columns__paragraph:nth-child(3) {
   font-weight: normal;
 }
 
+/*kaufman*/
+
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-title_theme_dark {
+  margin-top: 90px;
+  z-index: 1;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+  z-index: 1;
+}
+
+.table_theme_dark {
+  margin-bottom: 90px;
+  z-index: 1;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+  z-index: 1;
+}
+
+.section-title_theme_dark {
+  color: white;
+  z-index: 1;
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: 0;
+}
+
+/*footer*/
+
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
@@ -215,17 +303,11 @@ div p.two-columns__paragraph:nth-child(3) {
 
 .footer__columns {
   width: 90%;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.footer__column-links {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
 }
 
 .footer__column_content_copyright {
@@ -243,12 +325,27 @@ div p.two-columns__paragraph:nth-child(3) {
   left: 0;
 }
 
+.footer__author {
+  color: white;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+
 .footer__column-heading {
   margin-bottom: 20px;
   color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .footer__column-link {
@@ -259,86 +356,8 @@ div p.two-columns__paragraph:nth-child(3) {
   font-weight: normal;
 }
 
-.footer__author {
-  color: white;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 18px;
-  margin-top: 18px;
-}
-
 .footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
 }
-
-/*таблица*/
-.digits {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.table {
-  border: 1px solid royalblue;
-  width: 1100px;
-  margin-bottom: 100px;
-}
-
-.table__cell {
-  border: 2px solid darkkhaki;
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  margin-top: 60px;
-}
-
-.table__heading {
-  border: 1px solid turquoise;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.section-title {
-  width: 60%;
-  text-align: center;
-}
-
-.section-subtitle {
-  width: 60%;
-  text-align: center;
-}
-
-.table__body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.table__text {
-  margin-top: 20px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.section-title {
-  margin-top: 100px;
-  margin-bottom: 20px;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-}
-
-.section-subtitle {
-  margin: 0;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-}
-
