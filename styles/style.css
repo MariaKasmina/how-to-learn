@@ -46,9 +46,7 @@
   font-size: 102px;
   font-weight: bold;
   z-index: 1;
-  margin: 0;
-  position: absolute;
-  left: 64px;
+  margin: 0 0 0 64px;
 }
 
 .header__subtitle {
@@ -106,6 +104,7 @@
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
+  margin: 0;
 }
 
 .two-columns__main-text {
